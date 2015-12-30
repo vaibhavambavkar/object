@@ -1,5 +1,6 @@
 <?php
-$link = mysql_connect('host', 'root', 'password');
+$link = mysql_connect('mysql77757-env-3332420.jelasticlw.com.br', 'root', '26dZNC81L7');
+//'mysql77757-env-3332420.jelasticlw.com.br', 'root', '26dZNC81L7'
 if (!$link)
 {
 echo "<h2>MySQL Error!</h2>";
@@ -7,13 +8,13 @@ echo "<h2>MySQL Error!</h2>";
 }
  
 // Choose database:
-$db="mysql";
+$db="student";
 mysql_select_db($db);
 // table header output:
 echo "<table border=\"1\" width=\"100%\" bgcolor=\"#FFFFE1\">";
 echo "<tr><td>Value1</td><td>Value2</td><td>Value3</td>";
 // SQL-request:
-$q = mysql_query ("SELECT * FROM help_topic;");
+$q = mysql_query ("SELECT * FROM paper;");
 // table-result output
 for ($c=0; $c<mysql_num_rows($q); $c++)
 {
