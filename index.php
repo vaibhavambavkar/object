@@ -136,7 +136,7 @@ border: 1px none #000000"></div>
 $host_name = "mysql77757-env-3332420.jelasticlw.com.br";
 $database = "student"; 
 $username = "root";          
-$password = "26dZNC81";          
+$password = "26dZNC81L7";          
 
 try 
 {
